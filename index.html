@@ -83,7 +83,6 @@
             updateSpanText("currentBalance", depositNumber);
 
             document.getElementById("depositAmount").value = "";
-
         })
 
         // withdraw button handler
@@ -102,8 +101,7 @@
             const amountNumber = parseFloat(amount);
             return amountNumber;
         }
-
-
+        
         function updateSpanText(id, addedNumber) {
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
